@@ -15,19 +15,27 @@ This skill helps polish empirical finance prose into a top finance journal style
 
 ```mermaid
 flowchart LR
-    A["User text"] --> B["General rules"]
-    B --> C{"Task type"}
-    C -->|simple polish| D["Keep structure"]
-    C -->|section work| E["Section guide"]
-    D --> F["Polish layers"]
+    A["User text"] --> B["general-rules.md<br/>global writing rules"]
+    B --> C{"Need section logic?"}
+    C -->|no| D["keep user structure"]
+    C -->|yes| E["sections/&lt;target&gt;.md<br/>abstract.md / introduction.md / data.md<br/>model.md / empirical-findings.md / conclusion.md"]
+    D --> F["sentence-functions.md<br/>sentence structure"]
     E --> F
-    F --> G["De-AI audit"]
-    G --> H["Polished prose"]
+    F --> G["lexical-choices.md<br/>verbs and collocations"]
+    G --> H["de-ai-rules.md<br/>final de-AI review"]
+    H --> I["polished prose"]
 
-    classDef step fill:#f8fafc,stroke:#94a3b8,color:#0f172a;
-    classDef decision fill:#eef2ff,stroke:#6366f1,color:#1e1b4b;
-    class A,B,D,E,F,G,H step;
-    class C decision;
+    classDef input fill:#fff7ed,stroke:#fb923c,stroke-width:1px,color:#7c2d12;
+    classDef ref fill:#f8fafc,stroke:#64748b,stroke-width:1px,color:#0f172a;
+    classDef route fill:#eef2ff,stroke:#6366f1,stroke-width:1px,color:#312e81;
+    classDef action fill:#f0fdfa,stroke:#14b8a6,stroke-width:1px,color:#134e4a;
+    classDef output fill:#ecfdf5,stroke:#22c55e,stroke-width:1px,color:#14532d;
+
+    class A input;
+    class B,E,F,G,H ref;
+    class C route;
+    class D action;
+    class I output;
 ```
 
 ## Reference System
