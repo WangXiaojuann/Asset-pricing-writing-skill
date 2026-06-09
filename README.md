@@ -1,1 +1,101 @@
+# Asset Pricing Writing Polisher
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827.svg)](SKILL.md)
+[![Field](https://img.shields.io/badge/Field-Empirical%20Asset%20Pricing-2563eb.svg)](#)
+
+A Codex skill for polishing empirical asset-pricing prose in a restrained top finance journal style.
+
+The skill is distilled from 101 asset-pricing papers published in the **Journal of Finance (JF)**, **Journal of Financial Economics (JFE)**, and **The Review of Financial Studies (RFS)**. It is designed for rewriting, polishing, translating, diagnosing, and drafting academic finance prose while preserving the author's facts, notation, citations, tables, equations, numbers, and claim strength.
+
+## What It Does
+
+This skill helps turn rough or translated empirical finance writing into cleaner journal-style prose. It focuses on:
+
+- paragraph logic and section-level structure;
+- sentence-level clarity and claim discipline;
+- asset-pricing vocabulary and collocations;
+- de-AI cleanup for overly generic, mechanical, or prompt-like prose;
+- strict preservation of user-supplied empirical content.
+
+It does **not** invent results, citations, robustness checks, mechanisms, sample periods, or interpretations.
+
+## Workflow
+
+```mermaid
+flowchart TD
+    A["User text"] --> B["Read general writing rules"]
+    B --> C["Preserve supplied facts"]
+    C --> D{"Section-level work?"}
+    D -- "No: simple polish" --> E["Keep user structure"]
+    D -- "Yes: draft or strong rewrite" --> F["Load closest section guide"]
+    F --> G["Use move sequence as structure"]
+    E --> H["Polish paragraph logic"]
+    G --> H
+    H --> I["Fix sentence structure when needed"]
+    I --> J["Refine lexical choices"]
+    J --> K["Run final de-AI audit"]
+    K --> L["Return polished prose"]
+```
+
+## Reference System
+
+| Reference | Purpose |
+| --- | --- |
+| `references/general-rules.md` | Core writing rules used for every request. |
+| `references/sections/` | Section-specific guides for abstracts, introductions, data, models, empirical findings, and conclusions. |
+| `references/sentence-functions.md` | Sentence-level structure for weak, vague, translated, overlong, or poorly ordered prose. |
+| `references/lexical-choices.md` | Corpus-grounded verbs, phrases, and collocations for empirical asset-pricing writing. |
+| `references/de-ai-rules.md` | Final audit for empty setup, filler words, mechanical rhythm, and prompt-like formatting. |
+
+## Section Guides
+
+The skill includes guides for:
+
+- abstract;
+- introduction;
+- data;
+- model;
+- empirical findings;
+- conclusion.
+
+Section skeletons are used as structure only. They guide order and coverage, not wording to copy.
+
+## Installation
+
+Copy the skill folder into your Codex skills directory:
+
+```powershell
+Copy-Item -Path "asset-pricing-writing-polisher" `
+  -Destination "$env:USERPROFILE\.codex\skills\asset-pricing-writing-polisher" `
+  -Recurse
+```
+
+Restart Codex after installation.
+
+## Example Requests
+
+```text
+Polish this empirical results paragraph in a JFE/RFS style.
+```
+
+```text
+Rewrite this abstract using the asset-pricing-writing-polisher skill.
+```
+
+```text
+Translate this Chinese paragraph into top-finance-journal English.
+```
+
+## Design Principles
+
+- Preserve the user's facts and claim strength.
+- Improve logic before vocabulary.
+- Use section guides only when section-level guidance is needed.
+- Use sentence patterns as fallback shapes, not templates.
+- Use lexical choices as wording references, not sources of new content.
+- Run a final de-AI pass before returning polished prose.
+
+## License
+
+This project is released under the MIT License. See [LICENSE](LICENSE) for details.
