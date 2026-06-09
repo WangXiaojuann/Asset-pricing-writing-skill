@@ -6,11 +6,11 @@
 
 A Codex skill for polishing empirical asset-pricing prose in a restrained top finance journal style.
 
-The skill is distilled from 101 asset-pricing papers published in the **Journal of Finance (JF)**, **Journal of Financial Economics (JFE)**, and **The Review of Financial Studies (RFS)**. It is designed for rewriting, polishing, translating, diagnosing, and drafting academic finance prose while preserving the author's facts, notation, citations, tables, equations, numbers, and claim strength.
+The skill is distilled from 101 asset-pricing papers published in the **Journal of Finance (JF)**, **Journal of Financial Economics (JFE)**, and **The Review of Financial Studies (RFS)**. It is designed for rewriting, polishing, and drafting academic finance prose while preserving the author's facts, notation, citations, tables, equations, numbers, and claim strength.
 
 ## What It Does
 
-This skill helps polish empirical finance prose into a top finance journal writing style, especially for asset-pricing papers, while preserving user-supplied facts and claim strength.
+This skill helps polish empirical finance prose into a top finance journal style, especially for asset-pricing papers.
 
 ## Workflow
 
@@ -38,20 +38,7 @@ flowchart TD
 | `references/sections/` | Section-specific guides for abstracts, introductions, data, models, empirical findings, and conclusions. |
 | `references/sentence-functions.md` | Sentence-level structure for weak, vague, translated, overlong, or poorly ordered prose. |
 | `references/lexical-choices.md` | Corpus-grounded verbs, phrases, and collocations for empirical asset-pricing writing. |
-| `references/de-ai-rules.md` | Final audit for empty setup, filler words, mechanical rhythm, and prompt-like formatting. |
-
-## Section Guides
-
-The skill includes guides for:
-
-- abstract;
-- introduction;
-- data;
-- model;
-- empirical findings;
-- conclusion.
-
-Section skeletons are used as structure only. They guide order and coverage, not wording to copy.
+| `references/de-ai-rules.md` | Final de-AI review. |
 
 ## Installation
 
@@ -74,19 +61,6 @@ Polish this empirical results paragraph in a JFE/RFS style.
 ```text
 Rewrite this abstract using the asset-pricing-writing-polisher skill.
 ```
-
-```text
-Translate this Chinese paragraph into top-finance-journal English.
-```
-
-## Design Principles
-
-- Preserve the user's facts and claim strength.
-- Improve logic before vocabulary.
-- Use section guides only when section-level guidance is needed.
-- Use sentence patterns as fallback shapes, not templates.
-- Use lexical choices as wording references, not sources of new content.
-- Run a final de-AI pass before returning polished prose.
 
 ## License
 
