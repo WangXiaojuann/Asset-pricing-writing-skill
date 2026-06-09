@@ -2,7 +2,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827.svg)](SKILL.md)
-[![Field](https://img.shields.io/badge/Field-Empirical%20Asset%20Pricing-2563eb.svg)](#)
 
 A Codex skill for polishing empirical asset-pricing prose in a restrained top finance journal style.
 
@@ -52,10 +51,10 @@ Copy-Item -Path "asset-pricing-writing-polisher" `
 
 Restart Codex after installation.
 
-## Example Requests
+## Sample Prompts
 
 ```text
-Polish this empirical results paragraph in a JFE/RFS style.
+Polish this sentence using the asset-pricing-writing-polisher skill.
 ```
 
 ```text
