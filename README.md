@@ -1,4 +1,4 @@
-# Asset Pricing Writing Polisher
+# Asset Pricing Writing Skill
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827.svg)](SKILL.md)
@@ -33,7 +33,7 @@ flowchart TD
 
 | Reference | Purpose |
 | --- | --- |
-| `references/general-rules.md` | Core writing rules used for every request. |
+| `references/general-rules.md` | Core writing rules used for every request, based on John H. Cochrane's [Writing Tips for Ph.D. Students](https://static1.squarespace.com/static/5e6033a4ea02d801f37e15bb/t/5eea8ee7c4488718b640f3c6/1592430312374/phd_paper_writing.pdf). |
 | `references/sections/` | Section-specific guides for abstracts, introductions, data, models, empirical findings, and conclusions. |
 | `references/sentence-functions.md` | Sentence-level structure for weak, vague, translated, overlong, or poorly ordered prose. |
 | `references/lexical-choices.md` | Corpus-grounded verbs, phrases, and collocations for empirical asset-pricing writing. |
