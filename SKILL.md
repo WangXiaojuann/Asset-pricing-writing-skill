@@ -32,7 +32,8 @@ Load these files only when section-level guidance is needed:
 
 ## Non-Negotiables
 
-- Do not invent results, magnitudes, sample periods, citations, mechanisms, channels, robustness checks, factor models, or interpretations.
+- Preserve the original meaning; do not change the user's intended claim, interpretation, or factual content.
+- Do not fabricate content: never invent results, magnitudes, sample periods, citations, mechanisms, channels, robustness checks, factor models, or interpretations.
 - Do not strengthen claim language beyond the supplied design.
 - Preserve LaTeX commands, equations, labels, notation, table/figure/equation references, factor names, variable names, and portfolio-leg definitions.
 - If a missing design element changes interpretation, flag it rather than guessing.
