@@ -10,15 +10,7 @@ The skill is distilled from 101 asset-pricing papers published in the **Journal 
 
 ## What It Does
 
-This skill helps turn rough or translated empirical finance writing into cleaner journal-style prose. It focuses on:
-
-- paragraph logic and section-level structure;
-- sentence-level clarity and claim discipline;
-- asset-pricing vocabulary and collocations;
-- de-AI cleanup for overly generic, mechanical, or prompt-like prose;
-- strict preservation of user-supplied empirical content.
-
-It does **not** invent results, citations, robustness checks, mechanisms, sample periods, or interpretations.
+This skill helps polish empirical finance prose into a top finance journal writing style, especially for asset-pricing papers, while preserving user-supplied facts and claim strength.
 
 ## Workflow
 
