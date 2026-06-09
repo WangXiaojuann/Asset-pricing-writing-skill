@@ -11,22 +11,23 @@ The skill is distilled from 101 asset-pricing papers published in the **Journal 
 
 This skill helps polish empirical finance prose into a top finance journal style, especially for asset-pricing papers.
 
-## Workflow
+## Workflow of the Skill
 
 ```mermaid
-flowchart TD
-    A["User text"] --> B["Read general writing rules"]
-    B --> C["Preserve supplied facts"]
-    C --> D{"Section-level work?"}
-    D -- "No: simple polish" --> E["Keep user structure"]
-    D -- "Yes: draft or strong rewrite" --> F["Load closest section guide"]
-    F --> G["Use move sequence as structure"]
-    E --> H["Polish paragraph logic"]
-    G --> H
-    H --> I["Fix sentence structure when needed"]
-    I --> J["Refine lexical choices"]
-    J --> K["Run final de-AI audit"]
-    K --> L["Return polished prose"]
+flowchart LR
+    A["User text"] --> B["General rules"]
+    B --> C{"Task type"}
+    C -->|simple polish| D["Keep structure"]
+    C -->|section work| E["Section guide"]
+    D --> F["Polish layers"]
+    E --> F
+    F --> G["De-AI audit"]
+    G --> H["Polished prose"]
+
+    classDef step fill:#f8fafc,stroke:#94a3b8,color:#0f172a;
+    classDef decision fill:#eef2ff,stroke:#6366f1,color:#1e1b4b;
+    class A,B,D,E,F,G,H step;
+    class C decision;
 ```
 
 ## Reference System
