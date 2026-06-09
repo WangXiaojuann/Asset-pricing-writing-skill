@@ -38,6 +38,10 @@ flowchart LR
     class I output;
 ```
 
+## A Simple Example
+
+![A simple example](assets/simple-example.png)
+
 ## Reference System
 
 | Reference | Purpose |
