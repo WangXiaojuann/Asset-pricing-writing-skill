@@ -38,10 +38,6 @@ flowchart LR
     class I output;
 ```
 
-## A Simple Example
-
-![A simple example](assets/simple-example.png)
-
 ## Reference System
 
 | Reference | Purpose |
@@ -73,6 +69,10 @@ Polish this sentence using the asset-pricing-writing-polisher skill.
 ```text
 Rewrite this abstract using the asset-pricing-writing-polisher skill.
 ```
+
+## A Simple Example
+
+![A simple example](docs/simple-example.png)
 
 ## License
 
